@@ -1,0 +1,124 @@
+.c-banner {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    max-height: 55rem;
+    align-items: center
+}
+
+@media (max-width: 47.99em) {
+    .c-banner {
+        max-height:80vh
+    }
+}
+
+.c-banner__btn {
+    position: absolute;
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: .75rem;
+    padding: 1.4rem 1.238rem 1.4rem 1rem;
+    display: flex;
+    margin-left: 1.5rem;
+    max-width: 100%;
+    min-width: 18rem
+}
+
+@media (max-width: 63.99em) {
+    .c-banner__btn:not(:last-child) {
+        margin-bottom:1rem
+    }
+}
+
+.c-banner__btn svg {
+    width: 1.7rem;
+    height: auto;
+    margin-left: 1.688rem
+}
+
+.c-banner__title {
+    z-index: 2;
+    max-width: 37rem;
+    color: #fff
+}
+
+@media (max-width: 63.99em) {
+    .c-banner__title {
+        font-size:3.5rem
+    }
+}
+
+.c-banner__content {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%)
+}
+
+@media (max-width: 47.99em) {
+    .c-banner__content {
+        max-width:100%;
+        top: 25%
+    }
+}
+
+.c-banner__img {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover
+}
+
+.c-banner__video,.c-banner__video iframe {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.c-banner__video iframe {
+    top: 0;
+    pointer-events: none
+}
+
+.c-banner__overlay {
+    background: linear-gradient(279.61deg,rgba(0,0,0,.0001) 7.89%,#000 93.09%);
+    opacity: .4
+}
+
+.c-banner__mask,.c-banner__overlay {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.c-banner-image {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    max-height: 50rem
+}
+
+.c-banner-image__title {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    max-width: 70rem;
+    color: #fff;
+    transform: translateY(-50%)
+}
+
+.c-banner-image__overlay {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180.59deg,transparent 48.45%,rgba(0,0,0,.85) 98.56%)
+}
+
+.c-banner-image__img {
+    width: 100vw;
+    height: 100%;
+    object-fit: cover
+}

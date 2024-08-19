@@ -1,0 +1,55 @@
+.c-country-banner {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    gap: 4rem;
+    background: rgba(0,0,0,.85);
+    font-family: DIN Pro,Arial,sans-serif
+}
+
+.c-country-banner__title {
+    max-width: 40rem;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1
+}
+
+@media (max-width: 47.99em) {
+    .c-country-banner__title {
+        max-width:25rem;
+        font-size: 2.5rem
+    }
+}
+
+.c-country-banner__btn-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+@media (max-width: 47.99em) {
+    .c-country-banner__btn-list {
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 0;
+        overflow: hidden;
+        transition: height .3s ease-in
+    }
+}
+
+.c-country-banner__btn {
+    margin: 0 1rem;
+    font-weight: 400
+}
+
+@media (max-width: 47.99em) {
+    .c-country-banner__btn {
+        margin:2rem 0 0;
+        text-align: left
+    }
+}
+
+.c-country-banner__btn:active,.c-country-banner__btn:focus,.c-country-banner__btn:hover {
+    color: #e3021b
+}

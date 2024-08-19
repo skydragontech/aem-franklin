@@ -1,0 +1,35 @@
+.c-keyfigure {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 4rem;
+    color: rgba(0,0,0,.75);
+    font-family: DIN Pro,Arial,sans-serif;
+    font-size: 1.7rem
+}
+
+@media (max-width: 47.99em) {
+    .c-keyfigure {
+        display:flex;
+        flex-direction: column;
+        justify-content: start;
+        padding: 0 2rem
+    }
+}
+
+.c-keyfigure__item {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem
+}
+
+.c-keyfigure__number {
+    font-size: 5.8rem;
+    line-height: 1;
+    text-align: center
+}
+
+@media (max-width: 47.99em) {
+    .c-keyfigure__number {
+        font-size:4.7rem
+    }
+}

@@ -1,0 +1,125 @@
+.c-structured-activities {
+    padding-top: 8rem;
+    padding-bottom: 8rem
+}
+
+.c-structured-activities__title {
+    margin-bottom: 11.5rem
+}
+
+.c-activity {
+    position: relative
+}
+
+.c-activity:active .c-activity__title,.c-activity:focus .c-activity__title,.c-activity:hover .c-activity__title {
+    color: #e3021b
+}
+
+.c-activity:active .c-activity__content::before,.c-activity:focus .c-activity__content::before,.c-activity:hover .c-activity__content::before {
+    height: .4rem;
+    background: #e3021b
+}
+
+.c-activity__overlay {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180.77deg,transparent 32.14%,rgb(0 0 0 / 85%) 99.45%)
+}
+
+.c-activity__content {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    height: 42rem;
+    align-items: center;
+    justify-content: center;
+    background-size: 100% 100%;
+    transition: all .3s ease-in-out
+}
+
+.c-activity__content::before {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: transparent;
+    content: "";
+    transition: height .3s ease-in-out
+}
+
+.c-activity__content::after {
+    display: block;
+    padding-bottom: 120%;
+    content: ""
+}
+
+.c-activity__content:active,.c-activity__content:focus,.c-activity__content:hover {
+    text-decoration: none
+}
+
+@media (width <= 63.99em) {
+    .c-activity__content {
+        min-height:50rem;
+        background-size: 100% auto
+    }
+
+    .c-activity__content::after {
+        display: none
+    }
+}
+
+@media (width <= 47.99em) {
+    .c-activity__content {
+        min-height:25rem;
+        height: 100%;
+        background-size: 100% auto
+    }
+}
+
+@media (width >= 120em) {
+    .c-activity__content {
+        min-height:54rem
+    }
+}
+
+@media (width >= 120em) {
+    .c-activity__margin {
+        margin:12rem
+    }
+}
+
+.c-activity__title {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 3rem;
+    align-self: flex-end;
+    transition: color .3s ease-in-out
+}
+
+.c-activity__title::before {
+    content: "";
+    position: absolute;
+    left: -3.1rem;
+    top: -.5rem;
+    width: 0;
+    height: 0;
+    margin-right: 3rem;
+    border-color: transparent transparent transparent #494949;
+    border-style: solid;
+    border-width: 23.295px 0 23.295px 12.44px
+}
+
+.c-activity__img {
+    position: absolute;
+    inset: 0;
+    min-width: 100%;
+    min-height: 50%;
+    margin: auto;
+    overflow-x: hidden
+}
